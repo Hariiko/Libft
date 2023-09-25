@@ -59,10 +59,10 @@ LIBC	= 	ar -rcs
 
 FLAGS	= 	-Wall -Wextra -Werror
 
-.c.o :
-	${CC} ${FLAGS} -c $< -o ${<:.c=.o}
+%.o:%.c Makefile ${HEADER}
+	${CC} ${FLAGS} -c $< -o $@
 
-$(NAME):: ${OBJS} ${HEADER}
+$(NAME):: ${OBJS} ${HEADER} 
 	$(LIBC) $(NAME) $(OBJS)
 
 all: $(NAME)
