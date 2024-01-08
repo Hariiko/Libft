@@ -9,16 +9,16 @@
 /*   Updated: 2023/09/17 03:04:13 by laltarri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
-#include <stdlib.h>
 
 void	*ft_calloc(size_t num_elements, size_t element_size)
 {
-	char	*arreglo;
+	char	*array;
 
-	arreglo = malloc(num_elements * element_size);
-	if (!arreglo)
+	array = malloc(num_elements * element_size);
+	if (!array)
 		return (NULL);
-	ft_bzero (arreglo, num_elements * element_size);
-	return (arreglo);
+	ft_bzero (array, num_elements * element_size);
+	return (array);
 }

@@ -30,12 +30,3 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 	l = ft_strlen(src);
 	return (l);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int main( void ) {
-//	printf("el original -> %lu\n", strlcpy((void *)0, "hola", 1));
-	printf("el mio -> %zu\n", ft_strlcpy((void *)0, "hola", 1));
-//	printf("el original -> %lu\n", strlcpy("hola", (void *)0, 1));
-//	printf("el mio -> %zu\n", ft_strlcpy("hola", (void *)0, 1));
-}*/

@@ -11,9 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-char	*devolvertemp(int i, int j, char const *s1, char const *s2)
+char	*returntemp(int i, int j, char const *s1, char const *s2)
 {
 	char	*temp;
 	int		e;
@@ -49,6 +48,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	i = ft_strlen((char *)s1);
 	j = ft_strlen((char *)s2);
-	temp = devolvertemp(i, j, s1, s2);
+	temp = returntemp(i, j, s1, s2);
 	return (temp);
 }

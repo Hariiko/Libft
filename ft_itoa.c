@@ -10,32 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
-static char	*calcularnum(char *a, int i, int n)
+static char	*calculatenum(char *a, int i, int n)
 {
-	int	digito;
+	int	digital;
 
-	digito = 0;
+	digital = 0;
 	while (n > 0)
 	{
-		digito = n % 10;
-		a[i--] = digito + '0';
+		digital = n % 10;
+		a[i--] = digital + '0';
 		n = n / 10;
 	}
 	return (a);
 }
 
-static int	contnum(int copia)
+static int	contnum(int copy)
 {
 	int	i;
 
 	i = 0;
-	while (copia > 0)
+	while (copy > 0)
 	{
-		copia /= 10;
+		copy /= 10;
 		i++;
 	}
 	return (i);
@@ -56,16 +54,16 @@ static char	*construct_string(int n, int negative)
 		i++;
 	}
 	a[i--] = '\0';
-	a = calcularnum(a, i, n);
+	a = calculatenum(a, i, n);
 	return (a);
 }
 
 char	*ft_itoa(int n)
 {
-	int		copia;
+	int		copy;
 	int		negative;
 
-	copia = n;
+	copy = n;
 	negative = 0;
 	if (n == 0)
 		return (ft_strdup("0"));
@@ -73,16 +71,8 @@ char	*ft_itoa(int n)
 		return (ft_strdup("-2147483648"));
 	if (n < 0)
 	{
-		copia = -n;
+		copy = -n;
 		negative = 1;
 	}
-	return (construct_string(copia, negative));
+	return (construct_string(copy, negative));
 }
-/*#include <stdio.h>
-int main()
-{
-	char *s = ft_itoa(-2147483648);
-	printf("%s\n", s);
-	return 0;
-	}
-*/

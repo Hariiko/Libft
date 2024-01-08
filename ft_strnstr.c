@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h" 
-#include <string.h>
-#include <stdlib.h>
 
 static char	*search(const char *haystack, const char *needle, size_t len)
 {
@@ -43,10 +41,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	result = search(haystack, needle, len);
 	return ((char *)result);
 }
-/*
-int main()
-{
-	ft_strnstr("hellow da", (void *)0, 10);
-
-	return (0);
-}*/
