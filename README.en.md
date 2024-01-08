@@ -2,7 +2,7 @@ dfadsf
 # Libft 
 Este proyecto trata de hacer una librería personalizada replicando funciones que tenemos, tenemos la parte obligatoria y la parte bonus. Aquí explicaré de que trata cada función.
 
-# Obligatoria
+### Obligatoria
 
 · ft_atoi : Convierte una cadena de caracteres (string) y lo pasa a un valor entero (int).
 
@@ -73,7 +73,7 @@ Este proyecto trata de hacer una librería personalizada replicando funciones qu
 
 · ft_toupper : Convierte un carácter en mayúscula si es una letra minúscula.
 
-# Bonus
+### Bonus
 Esta parte se trata de listas enlazadas, una lista enlazada es una colección de nodos, donde cada nodo contiene un elemento de datos y un puntero al siguiente nodo en la secuencia. La lista termina con un puntero nulo, indicando el final de la lista.  
 
 Así sería la estructura de un nodo:
