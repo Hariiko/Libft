@@ -1,4 +1,3 @@
-dfadsf
 # Libft 
 Este proyecto trata de hacer una librería personalizada replicando funciones que tenemos, tenemos la parte obligatoria y la parte bonus. Aquí explicaré de que trata cada función.
 
@@ -23,7 +22,7 @@ Este proyecto trata de hacer una librería personalizada replicando funciones qu
 · ft_itoa : Convierte de un número entero (int) a una cadena de caracteres (string).
 
 · ft_memchr : Busca la primera aparición de un byte específico en un bloque de memoria.
-
+s
 · ft_memcmp : Compara los bloques de memoria byte a byte.
 
 · ft_memcpy : Copia un bloque de memoria desde una ubicación fuente a una ubicación de destino.
